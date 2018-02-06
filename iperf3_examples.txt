@@ -1,0 +1,6 @@
+iperf3.exe -c 10.10.10.100 -4 -N -w 256k -l 256k -t 60 >> C:\Example\iPerf__TCPMAXDOWNLOAD.txt
+iperf3.exe -c 10.10.10.100 -4 -N -w 256k -l 256k -R -t 60 >> C:\Example\iPerf__TCPMAXUPLOAD.txt
+iperf3.exe -c 10.10.10.100 -4 -l 32k -w 256k -u --get-server-output -t 60 -b 960m >> C:\Example\iPerf__UDPMAXDOWNLOAD.txt
+iperf3.exe -c 10.10.10.100 -4 -l 32k -w 256k -u --get-server-output -R -t 60 -b 960m >> C:\Example\iPerf__UDPMAXUPLOAD.txt
+iperf3.exe -c 10.10.10.100 -4 -l 32k -w 256k -u --get-server-output -t 60 >> C:\Example\iPerf__UDPPacketLossDownload.txt
+iperf3.exe -c 10.10.10.100 -4 -l 32k -w 256k -u -R --get-server-output -t 60 >> C:\Example\iPerf__UDPPacketLossUpload.txt
